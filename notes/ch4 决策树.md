@@ -1,3 +1,6 @@
+---
+Typora-root-url: ..
+---
 # 决策树
 
 ## 基本流程
@@ -185,7 +188,7 @@
 
   - Gini(D)越小，数据集D的纯度越高
 
-  - $Gini \_index(D,a)=\sum_{v=1}^V\frac{\vert D^v \vert}{\vert D \vert}Gini(D^v)$
+  - $Gini \_ index(D,a)=\sum_{v=1}^V\frac{\vert D^v \vert}{\vert D \vert}Gini(D^v)$
 
   - **CART**决策树
 
