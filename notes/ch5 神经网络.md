@@ -13,7 +13,7 @@ Typora-root-url: ..
 
 - **M-P神经元模型**：
 
-  ​	<img src="/assets/MLpics/T64.png" style="zoom:50%;" />
+  ​    <img src="/assets/MLpics/T64.png" style="zoom:50%;" />
 
   - 神经元接收到来自n个其他神经元传递过来的输入信号
   - 这些输入信号通过带权重的连接进行传递
@@ -55,15 +55,15 @@ Typora-root-url: ..
 
     - 与运算（x1^x2）
 
-      - 令$w_1=w_2=1,\theta=2,y=f(1*x_1+1*x_2-2)$
+      - 令$w_1=w_2=1,\theta=2,y=f(1* x _ 1+1* x _ 2-2)$
       - 仅$x_1=x_2=1,y=1$
 
     - 或运算（x1 v x2）
 
-      - 令$w_1=w_2=1,\theta=0.5,y=f(1*x_1+1*x_2-0.5)$
+      - 令$w_1=w_2=1,\theta=0.5,y=f(1* x _1+1 * x _ 2-0.5)$
       - 仅$x_1=1 \  or \  x_2=1,y=1$
 
-    - 非运算<img src="/assets/MLpics/T67.png" style="zoom:50%;" />
+    - 非运算<img src="/assets/MLpics/T67.png" style="zoom:50%;" align="left" />
 
       - 令$w_1=-0.6,w_2=0,\theta=-0.5,y=f(-0.6*x_1+0.5)$
       - 仅$x_1=1,y=0$
@@ -137,7 +137,7 @@ Typora-root-url: ..
 
 - 算法思想
 
-  - 给定训练集$D=\{ (x_1,y_1),...(x_m,y_m)\},x_i \in R^d y_i \in R^l$
+  - 给定训练集$D=\{ (x_1,y_1),...(x_m,y_m)\},x_i \in R^d，y_i \in R^l$
 
     - 输入示例由d个属性描述，输出l维实值向量
 
@@ -266,20 +266,20 @@ Typora-root-url: ..
 
 - E表示训练集上的误差，训练过程为在参数空间中，寻找一组最优参数使得E最小
 
-  - 若存在$w^*,\theta^*,\epsilon>0$使得
+  - 若存在$w ^ *,\theta ^ *,\epsilon>0$使得
 
-    $\forall (w;\theta) \in \{ (w;\theta) \vert \ \vert\vert (w;\theta)-(w^*;\theta^*) \vert\vert \le \epsilon \}$
+    $\forall (w;\theta) \in \{ (w;\theta) \vert \ \vert\vert (w;\theta)-(w^ *;\theta^ *) \vert\vert \le \epsilon \}$
 
 - **局部极小（local minimum）**
-  - 对上式都有$E(w;\theta) \ge E(w^*;\theta^*)$成立，$(w^*;\theta^*)$为局部最小解
+  - 对上式都有$E(w;\theta) \ge E(w^ *;\theta^ *)$成立，$(w^ *;\theta^ *)$为局部最小解
   - 其邻域点的误差函数值均不小于该点的函数值
-  - 对应的$E(w^*;\theta^*)$为局部极小值
+  - 对应的$E(w^ *;\theta^ *)$为局部极小值
   - 梯度为0，误差函数值小于邻点
   - 可能存在多个
 - **全局最小（global minimum）**
-  - 对参数空间的任意$(w;\theta)$都有$E(w;\theta) \ge E(w^*;\theta^*),(w^*;\theta^*)$为全局最小解
+  - 对参数空间的任意$(w;\theta)$都有$E(w;\theta) \ge E(w^ *;\theta^ *),(w^ *;\theta^ *)$为全局最小解
   - 所有点的误差函数值均不小于该点的函数值
-  - 对应的$E(w^*;\theta^*)$为全局最小值
+  - 对应的$E(w^ *;\theta^ *)$为全局最小值
   - 只能存在一个
   - 一定是局部极小
 
@@ -395,11 +395,12 @@ Typora-root-url: ..
 - **级联相关（Cascade-Correlation）**网络
 
   - 属于**结构自适应（亦称 构造性（constructive））**神经网络
-    - 不同于一般的网络结构事先固定，将网络结构也当作学习目标之一
-
+    
+  - 不同于一般的网络结构事先固定，将网络结构也当作学习目标之一
+    
   - 训练
 
-    ​	<img src="/assets/MLpics/T76.png" style="zoom:50%;" />
+    ​    <img src="/assets/MLpics/T76.png" style="zoom:50%;" />
 
     - 级联：建立层次连接的层级结构
       - 开始时，网络只有输入层和输出层，处于最小拓扑结构
@@ -517,7 +518,7 @@ Typora-root-url: ..
 
   - 分类
 
-    ​		<img src="/assets/MLpics/T77.png" style="zoom:50%;" />
+    ​        <img src="/assets/MLpics/T77.png" style="zoom:50%;" />
 
     - 标准的Boltzmann机：是一个全连接图，训练网络的复杂度很高，难以解决现实任务
     - **受限Boltzmann机（Restricted Boltzmann Machine，简称RBM）**：仅保留显层与隐层之间的连接，从而将其结构由完全图转为二部图
@@ -574,13 +575,12 @@ Typora-root-url: ..
         - **特征映射（feature map）**：一个由多个神经元构成的平面
 
         - **RELU**：将sigmoid激活函数替换为修正线性函数
-
-          $\begin{equation}
-          f(x)=\left\{\begin{array}{ll}
-          0, & \text { if } x<0 \\
-          x, & \text { otherwise }
-          \end{array}\right.
-          \end{equation}$
+            $$
+            f(x)=\left\{\begin{array}{ll}
+            0, & \text { if } x<0 \\
+            x, & \text { otherwise }
+            \end{array}\right.
+            $$
 
         - **采样层（亦称汇合层）（pooling）**：基于局部相关性原理进行亚采样，减少数据量，保留有用信息
 
@@ -612,4 +612,3 @@ Typora-root-url: ..
   <img src="/assets/MLpics/T80.png" style="zoom:50%;" />
 
   <img src="/assets/MLpics/T81.png" style="zoom:50%;" />
-
