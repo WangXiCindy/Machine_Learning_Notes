@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../assets/MLpics
 ---
 # 模型评估与选择
 
@@ -124,7 +124,7 @@ Typora-root-url: ..
       - 若一个学习器的P-R曲线被另一个学习器的曲线完全“包住”，则后者的性能优与前者（比如A优于C）
       - 如果两个学习器的P-R曲线发生交叉，则具体情况具体分析。此时，可以比较P-R曲线下面积的大小，这表征了学习器在查准率和查全率上取得相对较好的比例
 
-    <img src="/assets/MLpics/T2.png" alt="图片2" style="zoom:60%;" />
+    <img src="/T2.png" alt="图片2" style="zoom:60%;" />
 
     - ​	平衡点（BEP）
 
@@ -203,7 +203,7 @@ Typora-root-url: ..
 
       $\mathrm{FPR}=\frac{F P}{T N+F P}$
 
-      - <img src="/assets/MLpics/T3.png" style="zoom:50%;" />
+      - <img src="/T3.png" style="zoom:50%;" />
       - 曲线说明
         - 有限个坐标对时，无法产生光滑曲线
         - 先把分类阈值设为最大，所有样例均为反例，此时坐标为（0，0）
@@ -220,7 +220,7 @@ Typora-root-url: ..
 
         **梯形面积**$=\frac{1}{2} \left(x _ {i+1}-x _ {i}\right) \cdot\left(y _ {i}+y _ {i+1}\right)$
 
-        <img src="/assets/MLpics/T4.png" style="zoom:50%;" />
+        <img src="/T4.png" style="zoom:50%;" />
 
       - 给$m^{+}$个正例和$m^{-}$个反例，令$D^{+}$和$D^{-}$分别表示正、反例集合，则loss为
 
@@ -306,7 +306,7 @@ Typora-root-url: ..
 
     - 给定$\hat{\epsilon}$，则
 
-      ​	<img src="/assets/MLpics/T5.png" style="zoom:50%;" />
+      ​	<img src="/T5.png" style="zoom:50%;" />
 
       - $\partial P(\hat{\epsilon} ; \epsilon) / \partial \epsilon=0$
       - $P(\hat{\epsilon} ; \epsilon)$在$\hat{\epsilon}=\epsilon$时最大，如图，若$\epsilon=0.3$则10个样本中测得3个被误分类的概率最大
@@ -349,7 +349,7 @@ Typora-root-url: ..
 
       - 注意误分类样本数服从二项分布，大量样本之后，根据**中心极限定理**，所以大量二项分布（极限）服从正态
 
-        <img src="/assets/MLpics/T13.png" style="zoom:50%;" />
+        <img src="/T13.png" style="zoom:50%;" />
 
       - 假设我们得到了k个测试错误率$\hat\epsilon _ {1}, \hat{\epsilon} _ {2}, \ldots, \hat{\epsilon} _ {k}$，则
 
@@ -359,15 +359,15 @@ Typora-root-url: ..
 
       - 大学概率补充知识：
 
-        <img src="/assets/MLpics/T6.png" style="zoom:50%;" />
+        <img src="/T6.png" style="zoom:50%;" />
 
-        <img src="/assets/MLpics/T8.png" style="zoom:50%;" />
+        <img src="/T8.png" style="zoom:50%;" />
 
-        - t假设检验<img src="/assets/MLpics/T7.png" style="zoom:50%;" />
+        - t假设检验<img src="/T7.png" style="zoom:50%;" />
 
         - 得到服从自由度为k-1的t分布
 
-          <img src="/assets/MLpics/T9.png" style="zoom:50%;" />
+          <img src="/T9.png" style="zoom:50%;" />
 
         - 对假设$\mu=\epsilon$和显著度$\alpha$，我们可以计算出当测试错误率均值为$\epsilon _ {0}$时，在$1-\alpha$概率内能观测到的最大错误率
 
@@ -395,7 +395,7 @@ Typora-root-url: ..
 
     - 大学概率补充知识
 
-      <img src="/assets/MLpics/T10.png" style="zoom:50%;" />
+      <img src="/T10.png" style="zoom:50%;" />
 
   - 假设检验的重要前提：测试错误率均为泛化错误率的独立采样
 
@@ -413,7 +413,7 @@ Typora-root-url: ..
 
   - **列联表（contingency table）**是观测数据按两个或更多属性（定性变量）分类时所列出的频数表。它是由两个以上的变量进行交叉分类的频数分布表。
 
-  - <img src="/assets/MLpics/T11.png" style="zoom:50%;" />
+  - <img src="/T11.png" style="zoom:50%;" />
 
   - 若假设为两学习器性能相同，则应有$e _ {01}=e _ {10}$（实则为概率$p _ {e _ {01}}=p _ {e _ {10}}$）
 
@@ -421,7 +421,7 @@ Typora-root-url: ..
 
     “NOTE ON THE "CORRECTION FOR CONTINUITY" IN TESTING THE SIGNIFICANCE OF THE DIFFERENCE BETWEEN CORRELATED PROPORTIONS ”
 
-    <img src="/assets/MLpics/T15.png" style="zoom:40%;" />
+    <img src="/T15.png" style="zoom:40%;" />
 
   - 通过卡方分布进行评估，可将上表的$e _ {01}$与$e _ {10}$两个频率中较小的一个加上0.5、较大的一个减去0.5来进行**连续性校正**。
 
@@ -433,7 +433,7 @@ Typora-root-url: ..
 
   - 大学概率补充：
 
-    <img src="/assets/MLpics/T12.png" style="zoom:50%;" />
+    <img src="/T12.png" style="zoom:50%;" />
 
 - **Friedman检验**与Nemenyi后续检验
 
@@ -449,7 +449,7 @@ Typora-root-url: ..
 
       - 若算法测试性能相同，则平分序值
 
-        <img src="/assets/MLpics/T14.png" style="zoom:50%;" />
+        <img src="/T14.png" style="zoom:50%;" />
 
     - 使用基于算法排序的Friedman检验
 
@@ -469,7 +469,7 @@ Typora-root-url: ..
             
             $$ \begin{aligned} \delta^2 &=[(1-(k+1)/2)^{2}+(2-(k+1)/2)^{2}+...+(k-(k+1)/2)^{2}]/k \\ &=[(2-k-1)^{2}/4+(4-k-1)^{2}/4+...+(2k-k-1)^{2}/4]/k  \\ &= (4-2\times2(k+1)+(k+1)^{2}+...+(4k^{2}-2k\times2(k+1)+(k+1)^{2})/4k  \\ &=[(4+16+...+4k^{2})-2(k+1)(2+4+...+2k)+k(k+1)^{2}]/4k  \\ &=[4(1+2^{2}+...+k^{2})-4(k+1)(1+2+...+k)+k(k+1)^{2}]/4k \end{aligned} $$
       
-            - 根据平方和公式（注意该图中n对应上式中k）<img src="/assets/MLpics/T16.png" style="zoom:40%;" />
+            - 根据平方和公式（注意该图中n对应上式中k）<img src="/T16.png" style="zoom:40%;" />
       $$ \begin{aligned} \delta^2 &=[4k(k+1)(2k+1)/6-4(k+1)(1+2+...+k)+k(k+1)^{2}]/4k  \\ &=(k+1)[8k^{2}/6+4k/6-(k^{2}+k)]/4  \\ &=(k+1)[k^{2}/3-k/3]/4k \\ &=(k^{2}-1)/12 \end{aligned} $$
             
     - 所以其均值和方差分别为$(k+1)/2$和$(k^{2}-1)/12$，则
@@ -484,7 +484,7 @@ Typora-root-url: ..
         
       - 补充知识，**F分布**
         
-        <img src="/assets/MLpics/T17.png" style="zoom:50%;" />
+        <img src="/T17.png" style="zoom:50%;" />
         
       - $\tau _ {F}$服从自由度为$k-1$和$(k-1)(N-1)$的F分布
     
@@ -496,13 +496,13 @@ Typora-root-url: ..
     
   - $CD=q _ {\alpha}\sqrt{\frac{k(k+1)}{6N}}$
     
-    <img src="/assets/MLpics/T18.png" style="zoom:50%;" />
+    <img src="/T18.png" style="zoom:50%;" />
     
   - 若两个算法的平均序值之差超出了临界值域CD，则拒绝两个算法性能相同的假设
     
 - 举个例子
     
-  <img src="/assets/MLpics/T14.png" style="zoom:50%;" />
+  <img src="/T14.png" style="zoom:50%;" />
     
   - 先计算出$\tau _ {F}=24.429$，它大于$\alpha=0.05$时F的检验临界值，因此它拒绝“所有算法性能相同”的假设
     
@@ -510,7 +510,7 @@ Typora-root-url: ..
     
       - Friedman检验图如下图所示
     
-        <img src="/assets/MLpics/T19.png" style="zoom:50%;" />
+        <img src="/T19.png" style="zoom:50%;" />
     
         - 两个横线段（临界值域）有交叠，则说明这两个算法没有显著差别
 
@@ -530,7 +530,7 @@ Typora-root-url: ..
 
       - 学习算法期望
 
-      <img src="/assets/MLpics/T20.png" style="zoom:40%;" />
+      <img src="/T20.png" style="zoom:40%;" />
 
       - **偏差**
         - 期望预测与真实结果的偏离程度
@@ -544,11 +544,11 @@ Typora-root-url: ..
       - 在当前任务上任何学习算法所能达到的期望泛化误差的下界
       - 计算数据集中标记和真实标记的差别，属于学习该问题本身存在的差距
       - 学习问题本身的难度
-      - 假定噪声期望为0，也就是<img src="/assets/MLpics/T21.png" style="zoom:40%;" />
+      - 假定噪声期望为0，也就是<img src="/T21.png" style="zoom:40%;" />
 
     - 通过推导，可对算法的期望泛化误差进行分解
 
-      <img src="/assets/MLpics/T22.png" style="zoom:50%;" />
+      <img src="/T22.png" style="zoom:50%;" />
 
     - 公式推导详细说明
       - 3-4: 
@@ -570,7 +570,7 @@ Typora-root-url: ..
   
   - 偏差-方差窘境（bias-variance dilemma)
   
-    - <img src="/assets/MLpics/T23.png" style="zoom:50%;" />
+    - <img src="/T23.png" style="zoom:50%;" />
   - 在训练不足时，学习器的拟合能力不强，偏差大，方差小，此时偏差主导泛化错误率
     - 随着训练逐渐加深，拟合能力逐渐增强，方差逐渐主导泛化错误率
     - 当训练充足时，学习器拟合能力超强，方差大，偏差小，训练数据的微小变化都会导致学习器发生显著变化

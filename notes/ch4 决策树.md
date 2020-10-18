@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../assets/MLpics
 ---
 # 决策树
 
@@ -7,7 +7,7 @@ Typora-root-url: ..
 
 - 基于树结构进行决策
 
-  <img src="/assets/MLpics/T43.png" style="zoom:50%;" />
+  <img src="/T43.png" style="zoom:50%;" />
 
 - 树结构
 
@@ -24,7 +24,7 @@ Typora-root-url: ..
 
 - 流程：**分而治之（divide-and-cunquer）**
 
-  ​	<img src="/assets/MLpics/T44.png" style="zoom:40%;" />
+  ​	<img src="/T44.png" style="zoom:40%;" />
 
   - 递归返回的情况
     - 当前结点包含的样本全部属于同一类别，无需划分
@@ -90,7 +90,7 @@ Typora-root-url: ..
 
     - 案例：
 
-      <img src="/assets/MLpics/T45.png" style="zoom:50%;" />
+      <img src="/T45.png" style="zoom:50%;" />
 
       - 包含17个训练样例，$\vert y \vert =2$
 
@@ -138,17 +138,17 @@ Typora-root-url: ..
 
           $$\begin{aligned}Gain(D,a)&=Ent(D)-\sum_{v=1}^{V}\frac{\vert D^v \vert}{\vert D \vert}Ent(D^v) \\ &=0.998-(\frac{6}{17} \times 1+\frac{6}{17} \times 0.918+\frac{5}{17} \times 0.722)  \\ &= 0.109\end{aligned}$$
 
-          <img src="/assets/MLpics/T46.png" style="zoom:50%;" />
+          <img src="/T46.png" style="zoom:50%;" />
 
         - 属性“纹理”的信息增益最大，被选为划分属性
 
-          <img src="/assets/MLpics/T47.png" style="zoom:50%;" />
+          <img src="/T47.png" style="zoom:50%;" />
 
         - 然后分别计算这三个类别的剩下六个属性的信息增益做进一步划分
 
-          <img src="/assets/MLpics/T48.png" style="zoom:50%;" />
+          <img src="/T48.png" style="zoom:50%;" />
 
-          <img src="/assets/MLpics/T49.png" style="zoom:50%;" />
+          <img src="/T49.png" style="zoom:50%;" />
 
 - **增益率**
 
@@ -220,7 +220,7 @@ Typora-root-url: ..
           - $p_1=\frac{5}{11},p_2=\frac{6}{11}$
         - $Gini \_index(D,a)=\frac{6}{17}(1-(\frac{3}{6})^2-(\frac{3}{6})^2)+\frac{11}{17}(1-(\frac{5}{11})^2-(\frac{6}{11})^2)=0.497$
 
-        <img src="/assets/MLpics/T50.png" style="zoom:50%;" />
+        <img src="/T50.png" style="zoom:50%;" />
 
   - 在候选集合A中，选择那个使得划分后基尼指数最小的属性作为最优划分属性
 
@@ -240,7 +240,7 @@ Typora-root-url: ..
 
       - 选择“脐部”来进行划分，产生三个分支
 
-        <img src="/assets/MLpics/T51.png" style="zoom:50%;" />
+        <img src="/T51.png" style="zoom:50%;" />
 
       - 对划分前后的泛化性能进行估计
 
@@ -285,7 +285,7 @@ Typora-root-url: ..
 
     - 先从训练集生成一棵完整决策树，如上图4.5
 
-      <img src="/assets/MLpics/T52.png" style="zoom:50%;" />
+      <img src="/T52.png" style="zoom:50%;" />
 
     - 首先考察结点6
 
@@ -321,7 +321,7 @@ Typora-root-url: ..
 
       - 验证集精度为71.4%
 
-      <img src="/assets/MLpics/T53.png" style="zoom:50%;" />
+      <img src="/T53.png" style="zoom:50%;" />
 
     - 优缺点
 
@@ -372,7 +372,7 @@ Typora-root-url: ..
 
       - 在西瓜数据集2.0加上连续属性“密度”和“含糖率”，得到西瓜数据3.0
 
-        <img src="/assets/MLpics/T54.png" style="zoom:50%;" />
+        <img src="/T54.png" style="zoom:50%;" />
 
         - 密度
 
@@ -386,7 +386,7 @@ Typora-root-url: ..
           - T密度={0.049,0.074,0.095,0.101.0.126,0.155,0.179,0.204,0.213,0.226,0.250,0.265,0.292,0.344,0.373,0.418}
           - 信息增益为0.349，对应划分点0.126
 
-          <img src="/assets/MLpics/T55.png" style="zoom:50%;" />
+          <img src="/T55.png" style="zoom:50%;" />
 
   - 不同于离散属性，若当前结点划分属性为连续属性，该属性还可作为其后代结点的划分属性
 
@@ -396,7 +396,7 @@ Typora-root-url: ..
 
   - 如果直接放弃不完整样本
 
-    <img src="/assets/MLpics/T56.png" style="zoom:50%;" />
+    <img src="/T56.png" style="zoom:50%;" />
 
     - 仅有四个样本可以使用
 
@@ -466,7 +466,7 @@ Typora-root-url: ..
 
         $Gain(D,色泽)=\rho \times Gain(\tilde{D},色泽)=\frac{14}{17} \times 0.306 =0.252$
 
-    - <img src="/assets/MLpics/T57.png" style="zoom:50%;" />
+    - <img src="/T57.png" style="zoom:50%;" />
 
     - 纹理信息增益最大，被用于对根结点进行划分
 
@@ -484,7 +484,7 @@ Typora-root-url: ..
 
       - 结果：
 
-        <img src="/assets/MLpics/T58.png" style="zoom:50%;" />
+        <img src="/T58.png" style="zoom:50%;" />
 
 ## 多变量决策树
 
@@ -500,11 +500,11 @@ Typora-root-url: ..
 
   - 如图（只看密度和含糖率）
 
-    <img src="/assets/MLpics/T54.png" style="zoom:50%;" />
+    <img src="/T54.png" style="zoom:50%;" />
 
   - 生成的决策树和分类边界
 
-    <img src="/assets/MLpics/T59.png" style="zoom:50%;" />
+    <img src="/T59.png" style="zoom:50%;" />
 
   - 分类边界的每一段都与坐标轴平行，这样的分类边界使学习结构有较好的可解释性
 
@@ -514,7 +514,7 @@ Typora-root-url: ..
 
     - 如下图，决策树更加复杂，需要更多的属性测试，预测时间开销变大
 
-      <img src="/assets/MLpics/T60.png" style="zoom:50%;" />
+      <img src="/T60.png" style="zoom:50%;" />
 
 - **多变量决策树（multivariate decision tree）**
 
@@ -534,4 +534,4 @@ Typora-root-url: ..
 
     - 针对西瓜数据3.0
 
-      <img src="/assets/MLpics/T61.png" style="zoom:50%;" />
+      <img src="/T61.png" style="zoom:50%;" />

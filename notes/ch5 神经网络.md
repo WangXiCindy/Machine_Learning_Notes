@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../assets/MLpics
 ---
 # 神经网络
 
@@ -13,7 +13,7 @@ Typora-root-url: ..
 
 - **M-P神经元模型**：
 
-  ​    <img src="/assets/MLpics/T64.png" style="zoom:50%;" />
+  ​    <img src="/T64.png" style="zoom:50%;" />
 
   - 神经元接收到来自n个其他神经元传递过来的输入信号
   - 这些输入信号通过带权重的连接进行传递
@@ -30,7 +30,7 @@ Typora-root-url: ..
 
   - 实际：Sigmoid（别名挤压函数（squashing function））
 
-    <img src="/assets/MLpics/T65.png" style="zoom:50%;" />
+    <img src="/T65.png" style="zoom:50%;" />
 
 ## 感知机与多层网络
 
@@ -38,7 +38,7 @@ Typora-root-url: ..
 
   - 两层神经元组成
 
-    <img src="/assets/MLpics/T66.png" style="zoom:50%;" />
+    <img src="/T66.png" style="zoom:50%;" />
 
   - 输入层接收外界输入信号传递给输出层
 
@@ -63,7 +63,7 @@ Typora-root-url: ..
       - 令$w_1=w_2=1,\theta=0.5,y=f(1* x _1+1 * x _ 2-0.5)$
       - 仅$x_1=1 \  or \  x_2=1,y=1$
 
-    - 非运算<img src="/assets/MLpics/T67.png" style="zoom:50%;" align="left" />
+    - 非运算<img src="/T67.png" style="zoom:50%;" align="left" />
 
       - 令$w_1=-0.6,w_2=0,\theta=-0.5,y=f(-0.6*x_1+0.5)$
       - 仅$x_1=1,y=0$
@@ -76,7 +76,7 @@ Typora-root-url: ..
         - $w^Tx-\theta \ge 0$ 样本模型输出值为1
         - $w^Tx-\theta <0$ 样本模型输出值为0
 
-      <img src="/assets/Mlpics/T68.png" style="zoom:50%;" />
+      <img src="/T68.png" style="zoom:50%;" />
 
     - 感知机的学习过程一定会收敛（converge）而求得适当的权向量w
 
@@ -112,7 +112,7 @@ Typora-root-url: ..
 
     - 解决非线性可分问题
 
-      <img src="/assets/MLpics/T69.png" style="zoom:50%;" />
+      <img src="/T69.png" style="zoom:50%;" />
 
     - **隐（含）层（hidden layer）**：也是拥有激活函数的功能神经元
 
@@ -120,7 +120,7 @@ Typora-root-url: ..
 
       - A别称两层网络（本书称为单隐层网络）
 
-        <img src="/assets/MLpics/T70.png" style="zoom:50%;" />
+        <img src="/T70.png" style="zoom:50%;" />
 
         - 输入层：接收外界输入
         - 隐藏层，输出层（功能神经元）：对信号进行加工
@@ -143,7 +143,7 @@ Typora-root-url: ..
 
   - 下图有d个输入神经元，l个输出，q个隐藏层神经元
 
-    <img src="/assets/MLpics/T71.png" style="zoom:50%;" />
+    <img src="/T71.png" style="zoom:50%;" />
 
     - $\theta_j$：输出层第j个神经元的阈值
     - $\gamma_h$：隐藏层第h个神经元的阈值
@@ -228,11 +228,11 @@ Typora-root-url: ..
       - 为了达到同样的累积误差最小点，需要更多次的迭代
       - 对应**随机梯度下降（stochastic gradient descent，简称SGD）**
 
-    <img src="/assets/MLpics/T72.png" style="zoom:50%;" />
+    <img src="/T72.png" style="zoom:50%;" />
 
     结果示例：
 
-    <img src="/assets/MLpics/T73.png" style="zoom:50%;" />
+    <img src="/T73.png" style="zoom:50%;" />
 
   - **累积误差逆传播（accumulated error backpropagation）**
 
@@ -283,7 +283,7 @@ Typora-root-url: ..
   - 只能存在一个
   - 一定是局部极小
 
-<img src="/assets/MLpics/T74.png" style="zoom:50%;" />
+<img src="/T74.png" style="zoom:50%;" />
 
 - 基于梯度的搜索
   - 最广泛的参数寻优
@@ -382,7 +382,7 @@ Typora-root-url: ..
 
     - 也就是将高维空间中相似的样本点映射到网络输出层中的邻近神经元，从而保持拓扑结构
 
-      <img src="/assets/MLpics/T75.png" style="zoom:50%;" />
+      <img src="/T75.png" style="zoom:50%;" />
 
   - 过程
 
@@ -400,7 +400,7 @@ Typora-root-url: ..
     
   - 训练
 
-    ​    <img src="/assets/MLpics/T76.png" style="zoom:50%;" />
+    ​    <img src="/T76.png" style="zoom:50%;" />
 
     - 级联：建立层次连接的层级结构
       - 开始时，网络只有输入层和输出层，处于最小拓扑结构
@@ -518,7 +518,7 @@ Typora-root-url: ..
 
   - 分类
 
-    ​        <img src="/assets/MLpics/T77.png" style="zoom:50%;" />
+    ​        <img src="/T77.png" style="zoom:50%;" />
 
     - 标准的Boltzmann机：是一个全连接图，训练网络的复杂度很高，难以解决现实任务
     - **受限Boltzmann机（Restricted Boltzmann Machine，简称RBM）**：仅保留显层与隐层之间的连接，从而将其结构由完全图转为二部图
@@ -605,10 +605,10 @@ Typora-root-url: ..
 
 - 本推导来自南瓜书
 
-  <img src="/assets/MLpics/T78.png" style="zoom:50%;" />
+  <img src="/T78.png" style="zoom:50%;" />
 
-  <img src="/assets/MLpics/T79.png" style="zoom:50%;" />
+  <img src="/T79.png" style="zoom:50%;" />
 
-  <img src="/assets/MLpics/T80.png" style="zoom:50%;" />
+  <img src="/T80.png" style="zoom:50%;" />
 
-  <img src="/assets/MLpics/T81.png" style="zoom:50%;" />
+  <img src="/T81.png" style="zoom:50%;" />

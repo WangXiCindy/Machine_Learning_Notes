@@ -1,8 +1,12 @@
+---
+Typora-root-url: ../../assets/MLpics
+---
+
 ## 部分习题解释
 
 - 表格
 
-  ![T1](/assets/MLpics/T1.png)
+  ![T1](/T1.png)
 
 - 1.1	版本空间
 

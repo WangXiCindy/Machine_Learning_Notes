@@ -1,3 +1,7 @@
+---
+Typora-root-url: ../../assets/MLpics
+---
+
 ## 习题
 
 - 3.1 试析在什么情形下式（3.2）中不必考虑偏置项b
@@ -10,11 +14,11 @@
 
   - 凸函数就是一个定义在某个向量空间的凸子集C（区间）上的实值函数
 
-    ![](/assets/MLpics/T33.png)
+    ![](/T33.png)
 
     - 定义
 
-      <img src="/assets/MLpics/T34.png" style="zoom:70%;" />
+      <img src="/T34.png" style="zoom:70%;" />
 
       - 如果一个多元函数是凸函数，他的Hessian矩阵是半正定的
 
@@ -101,7 +105,7 @@
 
   结果如下
 
-  <img src="/assets/MLpics/T38.png" style="zoom:50%;" />
+  <img src="/T38.png" style="zoom:50%;" />
 
 - 3.4 选择两个UCI数据集，比较10折交叉验证法和留一法所估计出的对率回归的错误率
 
@@ -179,7 +183,7 @@
 
   结果如下图：
 
-  <img src="/assets/MLpics/T42.png" style="zoom:50%;" />
+  <img src="/T42.png" style="zoom:50%;" />
 
 - 3.6 线性判别分析仅在线性可分数据上能获得理想结果，试设计一个改进方法，使其能较好地用于非线性可分数据
 

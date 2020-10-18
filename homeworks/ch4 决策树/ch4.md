@@ -1,3 +1,7 @@
+---
+Typora-root-url: ../../assets/MLpics
+---
+
 ## 习题
 
 - 4.1 试证明对于不含冲突数据（即特征向量完全相同但标记不同）的训练集，必存在与训练集一致（即训练误差为0）的决策树
@@ -12,7 +16,7 @@
 
 - 4.3 试变成实现基于信息熵进行划分选择的决策树算法，并为表4.3中数据生成一棵决策树
 
-  <img src="/assets/MLpics/T54.png" style="zoom:50%;" />
+  <img src="/T54.png" style="zoom:50%;" />
 
   ```python
   # 根据书中伪代码写function即可
@@ -46,7 +50,7 @@
 
   ​	结果如下：
 
-  ​	<img src="/assets/Mlpics/T62.png" style="zoom:50%;" />
+  ​	<img src="/T62.png" style="zoom:50%;" />
 
 - 4.4 试实现基于基尼指数进行划分选择的决策树算法，为表4.2中数据生成预剪枝、后剪枝决策树，并与未剪枝决策树进行比较
 
@@ -183,7 +187,7 @@
 
   - 结果
 
-    <img src="/assets/MLpics/T63.png" style="zoom:70%;" />
+    <img src="/T63.png" style="zoom:70%;" />
 
 - 4.5 试编程实现基于对率回归进行划分选择的决策树算法，并为表4.3中数据生成一棵决策树
 

@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../../assets/MLpics
 ---
 
 ## 习题
@@ -10,7 +10,7 @@ Typora-root-url: ..
 
 - 5.2 试述使用图5.2(b)激活函数的神经元与对率回归的联系
 
-  <img src="/assets/MLpics/T65.png" style="zoom:50%;" />
+  <img src="/T65.png" style="zoom:50%;" />
 
   - 相同点：两者都是将连续值映射到{0,1}上
   - 不同点：激活函数不一定要使用sigmoid，只要是非线性的可导函数都可以使用。
@@ -99,7 +99,7 @@ Typora-root-url: ..
 
   - 结果
 
-    <img src="/assets/MLpics/T82.png" style="zoom:50%;" />
+    <img src="/T82.png" style="zoom:50%;" />
 
     - 累积BP性能更好
 
@@ -169,5 +169,5 @@ Typora-root-url: ..
 
   - 结果
 
-    <img src="/assets/MLpics/T83.png" style="zoom:50%;" />
+    <img src="/T83.png" style="zoom:50%;" />
 

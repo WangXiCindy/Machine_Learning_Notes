@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../assets/MLpics
 ---
 # 绪论
 

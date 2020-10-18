@@ -1,5 +1,5 @@
 ---
-Typora-root-url: ..
+Typora-root-url: ../assets/MLpics
 ---
 # 线性模型
 
@@ -126,7 +126,7 @@ Typora-root-url: ..
 
             - 如下图
 
-              <img src="/assets/MLpics/T24.png" style="zoom:50%;" />
+              <img src="/T24.png" style="zoom:50%;" />
 
           - 正定矩阵
 
@@ -150,7 +150,7 @@ Typora-root-url: ..
     - 譬如我们认为示例所对应的输出标记是在指数尺度上变化
       - $lny=w^Tx+b$
       - 虽然形式上仍然是线性回归，但实质上已经是在求取空间到输出空间的非线性函数映射
-      - <img src="/assets/MLpics/T25.png" style="zoom:50%;" />
+      - <img src="/T25.png" style="zoom:50%;" />
       - 这里对数函数起到了将线性回归模型的预测值与真实标记联系起来的作用
   - 广义线性模型
     - 考虑单调可微函数$g(·)$（称之为联系函数）
@@ -175,7 +175,7 @@ Typora-root-url: ..
   
   - 若预测值z大于0就判为正例，小于0则判为反例，预测值为临界值0则可以任意判别
 
-    <img src="/assets/MLpics/T26.png" style="zoom:50%;" />
+    <img src="/T26.png" style="zoom:50%;" />
 
   - 从图中可以看出，单位阶跃函数不连续，因此不能直接用作广义线性模型中的$g^-(·)$
 
@@ -211,7 +211,7 @@ Typora-root-url: ..
 
       - 补充知识
 
-        <img src="/assets/MLpics/T27.png" style="zoom:30%;" />
+        <img src="/T27.png" style="zoom:30%;" />
 
       - 给定数据集$\{(x _ i,y _ i)\}^m _ {i=1}$，对率回归模型最大化“对数似然”
 
@@ -264,7 +264,7 @@ Typora-root-url: ..
 
 - 二维示意图
 
-  <img src="/assets/MLpics/T28.png" style="zoom:50%;" />
+  <img src="/T28.png" style="zoom:50%;" />
 
 - 公式推导
 
@@ -280,7 +280,7 @@ Typora-root-url: ..
 
       - **协方差**：协方差是对两个随机变量联合分布线性相关程度的一种度量。两个随机变量越线性相关，协方差越大，完全线性无关，协方差为零。
 
-      <img src="/assets/MLpics/T29.png" style="zoom:30%;" />
+      <img src="/T29.png" style="zoom:30%;" />
 
       - **样本协方差**：对于多维随机变量$Q(x1,x2,x3,…,xn)$，样本集合为$$x _ {ij}=[x _ {1j},x _ {2j},…,x _ {nj}] (j=1,2,…,m) $$，m为样本数量，在$ a,b（a,b=1,2…n）$两个维度内:
 
@@ -334,7 +334,7 @@ Typora-root-url: ..
 
         - 设给定二元函数z=ƒ(x,y)和附加条件φ(x,y)=0，为寻找z=ƒ(x,y)在附加条件下的极值点，先做拉格朗日函数 
 
-          <img src="/assets/MLpics/T30.png" style="zoom:50%;" /> 
+          <img src="/T30.png" style="zoom:50%;" /> 
 
           (其中λ为参数)
 
@@ -448,7 +448,7 @@ Typora-root-url: ..
 
     - 测试时若仅有一个分类器预测为正类，对应的类别标记为最终分类结果
 
-      <img src="/assets/MLpics/T31.png" style="zoom:33%;" />
+      <img src="/T31.png" style="zoom:33%;" />
 
     - 比起OvO的优缺点
 
@@ -489,7 +489,7 @@ Typora-root-url: ..
             - 在正、反类之外，还可以指定“停用类”
             - 如下图，分类器$f _ 6$将$C _ 1$类和$C _ 3$类的样例作为正例，$C _ 2$类的样例作为反例
 
-            <img src="/assets/MLpics/T32.png" style="zoom:50%;" />
+            <img src="/T32.png" style="zoom:50%;" />
 
           - 在解码阶段
 
