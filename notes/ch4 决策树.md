@@ -164,7 +164,7 @@ Typora-root-url: ../assets/MLpics
 
   - 增益率定义为
 
-    $Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$
+    $Gain\_{ratio}(D,a)=\frac{Gain(D,a)}{IV(a)}$
 
     - 属性a的**固有值（intrinsic value）**
 
