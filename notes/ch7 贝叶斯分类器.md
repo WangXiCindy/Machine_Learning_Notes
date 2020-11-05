@@ -54,7 +54,7 @@ Typora-root-url: ../assets/MLpics
 - 估计类条件概率的一种常用策略
   - 假定其具有某种确定的概率分布形式
   - 基于训练样本对概率分布的参数进行估计
-  - 记关于类别c的类条件概率为$P(x \mid c)$，假设$P(x \mid x)$具有确定的形式并且被参数向量$\theta_c$唯一确定
+  - 记关于类别c的类条件概率为$P(x \mid c)$，假设$P(x \mid c)$具有确定的形式并且被参数向量$\theta_c$唯一确定
   - 任务：利用训练集D估计参数$\theta_c$，将$P(x \mid c)$记为$P(x \mid \theta_c)$
   
 - **参数估计（parameter estimation）**：概率模型的训练过程

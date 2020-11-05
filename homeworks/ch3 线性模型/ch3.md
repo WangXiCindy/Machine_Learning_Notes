@@ -29,7 +29,7 @@ Typora-root-url: ../../assets/MLpics
 
         - $H_{ij}=\frac{\partial^2f(x)}{\partial x_i \partial y_j}$
 
-        ![](/assets/MLpics/T35.png)
+        ![](/T35.png)
 
       - 半正定：对任意不为0的是实列向量X，都有$X^TAX>=0$
 
